@@ -1,0 +1,29 @@
+#maincontainer{
+    margin:auto;
+    margin-top:5%;
+    background-color:blue;
+    width: 70%;
+    height: 80%;
+    border-radius:26px;
+
+
+    display: flex;
+    flex-direction: row;
+}
+#plotarea{
+    background:red;
+}
+#control{
+    background:purple;
+  /*  border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;*/
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+
+}
+#inputfunc{
+    height: 30px;
+}
