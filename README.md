@@ -7,7 +7,7 @@ So I won't give you a huge explanation for why it's better because <br>
 IT'S SIMPLE.
 
 # How to get Started 
-Either use it here :<a href="https://beetrandahiya.github.io/plotter/" target="_blank"https://beetrandahiya.github.io/plotter/></a> <br>
+Either use it here :<a href="https://beetrandahiya.github.io/plotter/" target="_blank">https://beetrandahiya.github.io/plotter/</a> <br>
 <br>
 or just clone the repository to your local machine and you're good to go.<br>
 
