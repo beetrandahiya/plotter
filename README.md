@@ -6,8 +6,12 @@ You might ask <br>
 So I won't give you a huge explanation for why it's better because <br>
 IT'S SIMPLE.
 
-# Usage
+# How to get Started 
+Either use it here : https://beetrandahiya.github.io/plotter/ <br>
+<br>
+or just clone the repository to your local machine and you're good to go.<br>
 
+# Usage
 The whole motive is - It's simple <br>
 
 No complex values to set.<br>
