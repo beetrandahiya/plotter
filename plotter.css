@@ -2,20 +2,77 @@ body{
     background-color: #ffffff;
 background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
 }
+#colorthing{
+    padding:10px;
+    display:grid;
+    grid-template-columns:30% 50%;
+    
+}
 
+#color_select{
+    padding:3px;
+    border-radius:50%;
+    width: 60%;
+    margin:10px;
+    border: none;
+
+}
 #inputfunc{
     background:rgba(240,240,255,0.25);
     border-style:none;
-    width:80%;
+    width:76%;
+    text-align:left;
+    border-radius:8px;
     padding:10%;
-    font-size:auto;
-    text-align: center;
+    font-size:large;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;       
+}
+#dmnstart,#dmnend{
+    background:rgba(240,240,255,0.25);
+    border-style:none;
+    width:26%;
+    text-align:center;
+    border-radius:8px;
+    margin:5% 0 5% 0;
+    padding:5%;
+    font-size:large;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;       
 }
 #plotbtn{
     border:none;
     padding:15px;
+    width:30%;
     margin:10px;
+    cursor: pointer;
 }
+#plotbtn:hover{
+    transform: translateY(-1.5px);
+    background-color: rgba(137, 196, 244, 0.4);
+    transition: all 100ms;
+
+}
+#plotbtn:active{
+    transform: translateY(0px);
+
+}
+#colorbtn{
+    border:none;
+    cursor: pointer;
+    width:130%;
+
+}
+#colorbtn:hover{
+    transform: translateY(-1.5px);
+    background-color: rgba(137, 196, 244, 0.4);
+    transition: all 100ms;
+    cursor: pointer;
+
+}
+#colorbtn:active{
+    transform: translateY(0px);
+
+}
+
 #maincontainer{
     margin:auto;
     background:transparent;

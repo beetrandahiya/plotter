@@ -2,14 +2,21 @@
     <head>
         <script src="canvasjs.min.js"></script>
         <link rel="stylesheet" href="plotter.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
     </head>
     <body>
+    <div id="fnout"></div>
         <div id="maincontainer">
             <div id="control">
-                <input type="text" id="inputfunc">
-                <input type="color" id="color_select">
+             <div style="font-family: 'Bad Script', cursive;font-size:30px;">f(x)=  <input type="text" id="inputfunc"></div>
+             <div style="font-family: 'Bad Script', cursive;font-size:30px;">Domain=  <input type="text" id="dmnstart"> to <input type="text" id="dmnend"></div>
+
+              
                 <button onClick="plotgraph()" id="plotbtn">Plot</button>
+                <div id="colorthing"> <input type="color" id="color_select"><button id="colorbtn" onclick="changecolor()">Change color</button></div>
             </div>
             <div id="plotarea"></div>
         </div>
