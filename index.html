@@ -6,22 +6,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-
+        <script src="plotter.js"></script>
     </head>
     <body>
-    <div id="fnout"></div>
-        <div id="maincontainer">
             <div id="control">
-             <div style="font-family: 'Bad Script', cursive;font-size:30px;" id="inputfunc_div">f(x)=  <input type="text" id="inputfunc"></div>
-             <div style="font-family: 'Bad Script', cursive;font-size:30px;" id="dmndiv">Domain=  <input type="text" id="dmnstart"> to <input type="text" id="dmnend"></div>
+             <div style="font-family:'GoogleSans', cursive;font-size:30px;" id="inputfunc_div">f(x)=  <input type="text" id="inputfunc"></div>
+             <div id="dmndiv"><input type="text" id="dmnstart"> ≤ x ≤ <input type="text" id="dmnend"></div>
 
               
                 <button onClick="plotgraph()" id="plotbtn">Plot</button>
                 <div id="colorthing"> <input type="color" id="color_select"><button id="colorbtn" onclick="changecolor()">Change color</button></div>
             </div>
             <div id="plotarea"></div>
-        </div>
-        <script src="plotter.js"></script>
+        
+        
 
 
         

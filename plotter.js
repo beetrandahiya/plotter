@@ -93,7 +93,7 @@ function plotgraph() {
     window.chart = new CanvasJS.Chart("plotarea", {
         animationEnabled: true,
         zoomEnabled: true,
-        backgroundColor: 'rgba(255,255,255,0.3)',
+        backgroundColor: '#fcfcfc',
         zoomType: 'xy',
         title: {
             

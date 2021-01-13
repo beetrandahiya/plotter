@@ -1,6 +1,8 @@
 body{
-    background-color: #ffffff;
-background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
+    background-color: #fcfcfc;
+    display:grid;
+    grid-template-columns:30% 70%;
+    padding:0px;
 }
 #colorthing{
     padding:10px;
@@ -10,100 +12,145 @@ background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
 }
 
 #color_select{
-    padding:3px;
-    border-radius:50%;
+    background-color: #ffffff;
+    padding:0px;
+    
     width: 60%;
-    margin:10px;
+    cursor:pointer;
+    outline:none;
+    margin:15px;
     border: none;
 
 }
 #inputfunc{
-    background:rgba(240,240,255,0.25);
-    border-style:none;
-    width:76%;
+    width:74%;
+    margin:0;
     text-align:left;
     border-radius:8px;
     padding:10%;
+    outline:none;
     font-size:large;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;       
+    border: 3px solid rgba(110,255,255,0.18);
+    transition:all 200ms;
+    transition-timing-function: ease-in-out;
 }
+#inputfunc:hover{
+    border: 3px solid rgba(110,255,255,0.5);
+
+}
+#inputfunc:focus{
+    border: 3px solid rgba(110,255,255,0.5);
+}
+
 #dmnstart,#dmnend{
-    background:rgba(240,240,255,0.25);
     border-style:none;
-    width:26%;
+    outline:none;
+    width:20%;
     text-align:center;
     border-radius:8px;
     margin:5% 0 5% 0;
-    padding:5%;
+    padding:5% 0% 5% 0%;
     font-size:large;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;       
+    border: 3px solid rgba(110,255,255,0.18); 
+    transition:all 200ms;
+    transition-timing-function: ease-in-out;   
+}
+#dmnstart:hover{
+    border: 3px solid rgba(110,255,255,0.5);
+
+}
+#dmnstart:focus{
+    border: 3px solid rgba(110,255,255,0.5);
+}
+#dmnend:hover{
+    border: 3px solid rgba(110,255,255,0.5);
+
+}
+#dmnend:focus{
+    border: 3px solid rgba(110,255,255,0.5);
+}
+@font-face {
+    font-family: GoogleSans;
+    src: url(GoogleSans-Medium.ttf);
+  }
+#dmndiv{
+    text-align:center;
+    font-family: GoogleSans;
+    font-size:25px;
+
 }
 #plotbtn{
     border:none;
-    padding:15px;
-    width:30%;
+    border-radius:5px;
+    font-size: 20px;
+    padding:13px;
+    width:24%;
     margin:10px;
+    background:none;
+    outline:none;
     cursor: pointer;
+    border: 2.5px solid rgba(167,255,47,0.5);
+    font-family: GoogleSans;
 }
 #plotbtn:hover{
-    transform: translateY(-1.5px);
-    background-color: rgba(137, 196, 244, 0.4);
-    transition: all 100ms;
+    background-color:rgba(167, 255, 47,0.8);
+    transition: all 200ms;
+    color:white;
+    transition-timing-function:ease-in-out;
 
 }
 #plotbtn:active{
-    transform: translateY(0px);
+    transform: translateY(1px);
 
 }
 #colorbtn{
     border:none;
-    cursor: pointer;
+    border-radius:5px;
+    padding:5px;
     width:130%;
+    outline:none;
+    background:none;
+    cursor: pointer;
+    border: 2.5px solid rgba(167,255,47,0.5);
+    font-family: GoogleSans;
 
 }
 #colorbtn:hover{
-    transform: translateY(-1.5px);
-    background-color: rgba(137, 196, 244, 0.4);
-    transition: all 100ms;
-    cursor: pointer;
+    background-color:rgba(167, 255, 47,0.8);
+    transition: all 200ms;
+    color:white;
+    transition-timing-function:ease-in-out;
 
 }
 #colorbtn:active{
-    transform: translateY(0px);
+    transform: translateY(1px);
 
 }
 
-#maincontainer{
-    margin:auto;
-    background:transparent;
-    width: 100%;
-    height: 100%;
-    border-radius:26px;
-
-
-    display: flex;
-    flex-direction: row;
-}
 #plotarea{
-    background:rgba(240,240,255,0.2);
-    width:80%;
-    margin:0.3%;
-    border-bottom-right-radius: 23px;
-    border-top-right-radius: 23px;
+    background:transparent;
+    position: fixed;
+    right:3%;
+    bottom:11%;
+    
+    width:64%;
+    height:80%;
     
 }
 #control{
-    background:rgba(240,240,255,0.2);
-  /*  border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;*/
+    background:#ffffff;
+    top:0;
+
     display:flex;
+    position: absolute;
     flex-direction: column;
     width:30%;
+    height:100%;
+    margin:none;
+    padding:0;
     
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius: 23px;
-    border-top-left-radius: 23px;
 
 }
 #inputfunc{
@@ -112,22 +159,19 @@ background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
 
 
 @media only screen and (orientation: portrait){
-    #maincontainer{
-        
-        flex-direction: column;
-    }
     #control{
         width:100%;
+        height:30%;
+        position:fixed;
+        top:0;
         
     }
     #plotbtn{
         width:16%;
-        height: 100%;
         font-size:30px;
     }
     #colorthing{
         width:16%;
-        height: 100%;
         font-size:30px;
     }
     #dmnstart,#dmnend{
@@ -143,6 +187,8 @@ background-image: linear-gradient(315deg, #d7e1ec 0%, #ffffff 74%);
     }
     #plotarea{
         width:98%;
-        height:60%;
+        height:65%;
+        bottom:2.2%;
+
     }
 }
