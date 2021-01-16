@@ -58,22 +58,47 @@ function plotgraph() {
         toreplace = `[${strtkn}]`;
         fnl = "Math.floor(" + strtkn + ")";
         funcinp = funcinp.replaceAll(toreplace, fnl);
-
-
     };
 
+    console.log(funcinp);
      var dmnstart=parseInt(document.getElementById("dmnstart").value);
      var dmnend=parseInt(document.getElementById("dmnend").value);
-     dmnstart=dmnstart*100;
-     dmnend=dmnend*100;
+     dmnstart=dmnstart*1000;
+     dmnend=dmnend*1000;
 
 
     var datay = [];
-
+    var pilist= [];
+    var pivlclist= [];
+    for(i=-100;i<100;i++){
+        pivl=i*(Math.PI)/2; 
+        pivlcomp=parseFloat(pivl.toFixed(3));             //list of values of n*(pi/2)
+        pilist.push(pivl);
+        pivlclist.push(pivlcomp);
+    }
+    
     for (i = dmnstart; i < dmnend; i++) {
-        x = i / 100;
+        x = i / 1000;
         yv = eval(funcinp);                                          //evaluating the function and returning y values
-        if(yv==Infinity){
+       
+        if(pivlclist.includes(x)){              //checking if x is in pilist
+            j=pivlclist.indexOf(x);              //so as to make calclations more precise at
+            x=pilist[j];
+            
+            yn=eval(funcinp)
+            if(yn>1000){                        //making graphs discontious at infinity
+                yv=Infinity;
+            }
+            else if(yn<-1000){
+                yv=-Infinity;
+            }
+            else{
+                yvu={
+                x : x,
+                y : 0}
+            }
+        }
+        if(yv==Infinity || yv==-Infinity){                        //making graphs discontious at infinity
             yvu = {
                 x: x,
                 y: null
@@ -85,9 +110,10 @@ function plotgraph() {
             x: x,
             y: yv
         };
+        
     }
         datay.push(yvu);
-        //console.log(datay[i]);
+        console.log(datay[i]);
     }
     
     window.chart = new CanvasJS.Chart("plotarea", {
@@ -104,13 +130,15 @@ function plotgraph() {
         },
         axisY: {
             gridThickness: 0.5,
-            margin: 20
+            margin: 20,
+            maximum:10,
+            minimum:-10
         },
 
         data: [{
             type: "spline",
-            lineThickness: 3,
-            color: "rgba(255,215,0,0.9)", //change later
+            lineThickness: 2,
+            color: "rgba(255,215,0,0.9)",           //change later
             dataPoints: datay
         }]
 
