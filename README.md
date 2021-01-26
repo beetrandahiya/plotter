@@ -23,6 +23,28 @@ Ummm, okay, you dont like the color of the graph.<br>
 NO , We don't have a 8 color pickup menu, where you can pick out of just a few colors<br>
 Rather, You can choose literally any color you want.<br>
 
+# Examples
+Here are some examples of divine graphs using plotter
+<br>
+sin(x)
+<br>
+<img  width="70%" src="/examples/sin.PNG">
+<br>
+tan(x)
+<br>
+<img  width="70%" src="/examples/tangent.PNG">
+<br>
+Witch of Agnesi
+<br>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/efaa5eccb7f29444ca90f458c7eea3abfe29a1cc">
+<br>
+where a=1 in the following example,<br>
+<img  width="70%" src="/examples/witchofagneshi.PNG">
+<br>
+Another Cool graph
+<br>
+<img  width="70%" src="/examples/another_nice_graph.PNG">
+
 # Note
 Plotter will be updated with new features very frequently. <br>
 So, don't forget to follow.<br>
