@@ -35,7 +35,9 @@ and If you have a suggestion, Please tell me at : <div padding="10px">
 Thanks
 
 <hr>
-# Made using <a href="https://www.canvasjs.com"> <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_efb1b2ba6b11bd2a070628dc56b9fef5/canvasjs-charts.png" width="85px" hspace="6"></a>
+<b> Made using </b>
+<br>
+<a href="https://www.canvasjs.com"> <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_efb1b2ba6b11bd2a070628dc56b9fef5/canvasjs-charts.png" width="85px" hspace="6"></a>
 
 
 
